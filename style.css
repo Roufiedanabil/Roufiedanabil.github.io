@@ -1,0 +1,124 @@
+
+/* WEBSITE COLORS */
+:root {
+    --background: #0b1120;
+    --card: #17243a;
+    --accent: #38bdf8;
+    --text: #f1f5f9;
+    --muted: #a8b8cc;
+}
+
+/* GENERAL DESIGN */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(
+        135deg, #0b1120, #163456
+    );
+}
+
+header h1 {
+    font-size: clamp(32px, 5vw, 54px);
+    margin-bottom: 12px;
+}
+
+header p {
+    color: var(--accent);
+    font-size: 20px;
+}
+
+/* NAVIGATION */
+nav {
+    background: #111c30;
+    text-align: center;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+
+/* CONTENT SECTIONS */
+section {
+    max-width: 1050px;
+    margin: 40px auto;
+    padding: 35px;
+    background: var(--card);
+    border-radius: 16px;
+}
+
+section h2 {
+    color: var(--accent);
+    font-size: 28px;
+    border-bottom: 1px solid #334155;
+    padding-bottom: 12px;
+}
+
+section h3 {
+    color: white;
+    margin-top: 30px;
+}
+
+section p {
+    color: var(--muted);
+}
+
+section a {
+    color: var(--accent);
+}
+
+/* SKILLS */
+li {
+    margin: 10px 0;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 35px;
+    color: var(--muted);
+}
+
+/* MOBILE DESIGN */
+@media (max-width: 600px) {
+    header {
+        padding: 65px 20px;
+    }
+
+    section {
+        margin: 20px 12px;
+        padding: 22px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 8px;
+    }
+}
