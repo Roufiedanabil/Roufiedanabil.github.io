@@ -469,3 +469,77 @@ footer {
         scroll-behavior: auto !important;
     }
 }
+
+/* ==================================
+   CARTOON ENGINEERING PROJECT CARDS
+   ================================== */
+
+/* Arrange projects in a grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+/* Design each project card */
+.project-card {
+    display: block;
+    padding: 30px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+
+    background: linear-gradient(145deg, #30205e, #171d43);
+    border: 2px solid #a855f7;
+    border-radius: 25px;
+
+    box-shadow: 0 0 15px #a855f755;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Make cards move when hovered */
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px #a855f7;
+}
+
+/* Large cartoon project icons */
+.project-icon {
+    font-size: 75px;
+    margin-bottom: 15px;
+}
+
+/* Project titles */
+.project-card h3 {
+    color: #67e8f9;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+/* Project descriptions */
+.project-card p {
+    color: #d1d5db;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* Mission labels */
+.project-card span {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 16px;
+
+    background: #9333ea;
+    color: white;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+/* Smaller screens */
+@media (max-width: 600px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
