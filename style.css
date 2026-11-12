@@ -543,3 +543,68 @@ footer {
     }
 }
 
+/* ==================================
+   NASA L'SPACE MISSION PAGE DESIGN
+   ================================== */
+
+/* Style NASA mission sections */
+body:has(a[href="nasa.html"]) main section,
+body:has(a[href="mission-concept.html"]) section,
+body:has(a[href="proposal-writing.html"]) section {
+
+    background: rgba(35, 20, 75, 0.75);
+
+    border: 2px solid #9b5cff;
+    border-radius: 25px;
+
+    padding: 35px;
+    margin: 35px auto;
+
+    max-width: 950px;
+
+    box-shadow: 0 0 20px rgba(155, 92, 255, 0.3);
+
+    transition: 0.3s;
+}
+
+/* Glow when hovering over a mission section */
+body:has(a[href="nasa.html"]) main section:hover,
+body:has(a[href="mission-concept.html"]) section:hover,
+body:has(a[href="proposal-writing.html"]) section:hover {
+
+    box-shadow: 0 0 35px rgba(190, 110, 255, 0.65);
+
+    transform: translateY(-4px);
+}
+
+/* NASA page headings */
+body:has(a[href="nasa.html"]) main h2,
+body:has(a[href="mission-concept.html"]) h2,
+body:has(a[href="proposal-writing.html"]) h2 {
+
+    color: #e7b6ff;
+    text-shadow: 0 0 12px #9b5cff;
+}
+
+/* Style NASA project links */
+body:has(a[href="nasa.html"]) main a.hero-button,
+body:has(a[href="mission-concept.html"]) a.hero-button,
+body:has(a[href="proposal-writing.html"]) a.hero-button {
+
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Mobile-friendly NASA sections */
+@media (max-width: 600px) {
+
+    body:has(a[href="nasa.html"]) main section,
+    body:has(a[href="mission-concept.html"]) section,
+    body:has(a[href="proposal-writing.html"]) section {
+
+        padding: 20px;
+        margin: 20px 12px;
+    }
+}
+
