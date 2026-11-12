@@ -663,3 +663,28 @@ body:has(a[href="proposal-writing.html"]) a.hero-button {
         transform: none;
     }
 }
+
+/* NASA academy illustrations */
+.academy-image {
+    display: block;
+    width: 100%;
+    max-width: 280px;
+    height: 180px;
+    object-fit: contain;
+    border-radius: 18px;
+    margin: 0 auto;
+}
+
+/* Keep both illustrations centered */
+.project-card .project-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Gentle animation when hovering */
+.project-card:hover .academy-image {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
